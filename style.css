@@ -1,0 +1,423 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+
+/* TOP LOGO */
+
+.top-logo{
+text-align:center;
+padding:25px;
+background:#000;
+}
+
+.top-logo img{
+width:120px;
+height:auto;
+}
+
+
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0b0b0b;
+border-bottom:1px solid #b08d2c;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+
+.brand{
+font-size:25px;
+font-weight:bold;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+}
+
+
+.nav-links a:hover{
+color:#d4af37;
+}
+
+
+
+
+/* HERO */
+
+.hero{
+height:85vh;
+position:relative;
+overflow:hidden;
+}
+
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.55;
+}
+
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+width:90%;
+}
+
+
+.hero-text h1{
+font-size:55px;
+color:#d4af37;
+letter-spacing:2px;
+}
+
+
+.hero-text p{
+font-size:20px;
+margin:20px 0;
+}
+
+
+
+.hero-text a,
+.card a{
+display:inline-block;
+background:#d4af37;
+color:black;
+padding:14px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
+
+/* ALL SECTION */
+
+section{
+padding:70px 8%;
+text-align:center;
+}
+
+
+
+h2{
+font-size:38px;
+color:#d4af37;
+margin-bottom:40px;
+}
+
+
+
+/* TESTER */
+
+.tester img{
+width:300px;
+border-radius:15px;
+margin:20px;
+}
+
+
+.tester p{
+max-width:600px;
+margin:auto;
+line-height:1.7;
+}
+
+
+
+
+button{
+background:#d4af37;
+border:none;
+padding:13px 30px;
+border-radius:30px;
+margin-top:20px;
+font-weight:bold;
+cursor:pointer;
+}
+
+
+
+
+/* PRODUCTS */
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+
+
+.card{
+background:#111;
+border:1px solid #333;
+padding:25px;
+width:330px;
+border-radius:20px;
+transition:.4s;
+}
+
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+}
+
+
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+
+.card h3{
+color:#d4af37;
+font-size:25px;
+margin:20px;
+}
+
+
+
+.card p{
+line-height:1.6;
+margin-bottom:20px;
+}
+
+
+
+
+/* REVIEWS */
+
+.reviews{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+
+.review{
+background:#111;
+padding:25px;
+border-radius:15px;
+width:300px;
+color:#ddd;
+}
+
+
+
+form{
+max-width:500px;
+margin:40px auto;
+}
+
+
+
+input,
+textarea{
+
+width:100%;
+padding:15px;
+margin:10px;
+background:#111;
+border:1px solid #555;
+color:white;
+border-radius:10px;
+
+}
+
+
+
+/* TRUST BADGES */
+
+
+.trust{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+
+.trust div{
+
+background:#111;
+padding:30px;
+border-radius:20px;
+min-width:220px;
+
+animation:slide 3s infinite;
+
+}
+
+
+
+.trust h3{
+color:#d4af37;
+margin-top:15px;
+}
+
+
+
+@keyframes slide{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+
+
+
+
+/* BRAND */
+
+.brand-section h1{
+
+font-size:55px;
+color:#d4af37;
+letter-spacing:5px;
+
+}
+
+
+
+
+
+/* SOCIAL */
+
+
+.social a{
+
+color:#d4af37;
+margin:15px;
+text-decoration:none;
+font-size:20px;
+
+}
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#000;
+padding:50px 8%;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:30px;
+
+}
+
+
+
+footer h3{
+
+color:#d4af37;
+margin-bottom:20px;
+
+}
+
+
+footer p{
+
+color:#aaa;
+line-height:2;
+
+}
+
+
+.copy{
+
+width:100%;
+text-align:center;
+border-top:1px solid #333;
+padding-top:20px;
+
+}
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+
+.nav-links{
+
+margin-top:20px;
+
+}
+
+
+.hero-text h1{
+
+font-size:32px;
+
+}
+
+
+.brand-section h1{
+
+font-size:35px;
+
+}
+
+
+}
