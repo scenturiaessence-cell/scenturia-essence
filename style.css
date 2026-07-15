@@ -1,0 +1,680 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#050505;
+color:#fff;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+
+}
+
+
+:root{
+
+--gold:#c9a227;
+--dark:#050505;
+--lightgold:#e6c75f;
+
+}
+
+
+
+/* ANNOUNCEMENT */
+
+.announcement{
+
+background:#000;
+color:var(--lightgold);
+text-align:center;
+padding:12px;
+font-size:14px;
+letter-spacing:1px;
+border-bottom:1px solid #2d2410;
+
+}
+
+
+
+
+
+/* HEADER */
+
+
+header{
+
+background:rgba(0,0,0,.95);
+position:sticky;
+top:0;
+z-index:999;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #3a2c0b;
+
+}
+
+
+
+.logo-area img{
+
+width:90px;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:15px;
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+color:var(--gold);
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:90vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+}
+
+
+
+.hero-image{
+
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+filter:brightness(.35);
+
+}
+
+
+
+.hero-content{
+
+max-width:800px;
+padding:20px;
+
+}
+
+
+.hero-content h1{
+
+font-family:'Cinzel',serif;
+font-size:65px;
+letter-spacing:5px;
+color:var(--gold);
+
+}
+
+
+
+.hero-content h2{
+
+font-size:38px;
+margin:20px 0;
+
+}
+
+
+.hero-content p{
+
+font-size:18px;
+color:#ddd;
+margin-bottom:35px;
+
+}
+
+
+
+.gold-btn{
+
+display:inline-block;
+background:linear-gradient(45deg,#a67c00,#f4d35e,#b8860b);
+color:#000;
+padding:15px 40px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.4s;
+
+}
+
+
+
+.gold-btn:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+
+
+
+
+/* SECTION TITLE */
+
+
+.section-title{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+
+.section-title h2,
+.reviews h2,
+.social h2{
+
+font-family:'Cinzel',serif;
+font-size:42px;
+color:var(--gold);
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+/* TESTER BOX */
+
+
+.tester-section{
+
+padding:90px 8%;
+
+}
+
+
+
+.tester-box{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+
+}
+
+
+
+.tester-box img{
+
+width:380px;
+border-radius:20px;
+box-shadow:0 0 40px #5c470b;
+
+}
+
+
+
+.tester-content{
+
+max-width:450px;
+
+}
+
+
+
+.tester-content h3{
+
+font-size:32px;
+color:var(--gold);
+margin-bottom:20px;
+
+}
+
+
+
+.tester-content p{
+
+color:#ccc;
+line-height:1.8;
+
+}
+
+
+
+.tester-content ul{
+
+margin:25px 0;
+list-style:none;
+line-height:2;
+
+}
+
+
+
+
+
+
+
+/* PRODUCTS */
+
+
+.collection{
+
+padding:80px 8%;
+
+}
+
+
+
+.products{
+
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+
+
+.product-card{
+
+background:#0d0d0d;
+width:350px;
+padding:25px;
+border-radius:20px;
+border:1px solid #29200c;
+transition:.5s;
+
+}
+
+
+
+.product-card:hover{
+
+transform:translateY(-15px);
+box-shadow:0 0 30px #705600;
+
+}
+
+
+
+.product-card img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+
+}
+
+
+
+.product-card h3{
+
+color:var(--gold);
+font-size:28px;
+margin:20px 0;
+
+}
+
+
+
+.product-card p{
+
+color:#ccc;
+line-height:1.7;
+margin-bottom:25px;
+
+}
+
+
+
+.product-card a{
+
+color:#000;
+background:var(--gold);
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* REVIEWS */
+
+
+.reviews{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+
+.review-container{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:40px;
+
+}
+
+
+
+.review-card{
+
+background:#101010;
+padding:30px;
+width:300px;
+border-radius:20px;
+border:1px solid #30250c;
+color:#ddd;
+
+}
+
+
+
+.reviews button{
+
+background:var(--gold);
+border:none;
+padding:14px 35px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+
+
+
+
+
+
+/* TRUST BADGES */
+
+
+.trust{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:70px 8%;
+
+}
+
+
+
+.trust div{
+
+width:250px;
+background:#0d0d0d;
+padding:35px;
+border-radius:20px;
+text-align:center;
+border:1px solid #332600;
+animation:float 3s infinite;
+
+}
+
+
+
+.trust span{
+
+font-size:45px;
+
+}
+
+
+
+.trust h3{
+
+margin-top:20px;
+color:var(--gold);
+
+}
+
+
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+
+
+
+
+/* BRAND */
+
+
+.brand{
+
+text-align:center;
+padding:90px 20px;
+
+}
+
+
+
+.brand h1{
+
+font-family:'Cinzel',serif;
+font-size:60px;
+letter-spacing:8px;
+color:var(--gold);
+
+}
+
+
+
+
+
+
+
+/* SOCIAL */
+
+
+.social{
+
+text-align:center;
+padding:50px;
+
+}
+
+
+
+.social a{
+
+color:var(--gold);
+margin:15px;
+text-decoration:none;
+font-size:20px;
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#000;
+padding:60px 8%;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:40px;
+
+}
+
+
+
+footer h3{
+
+color:var(--gold);
+margin-bottom:20px;
+
+}
+
+
+
+footer p{
+
+color:#aaa;
+line-height:2;
+
+}
+
+
+
+.copyright{
+
+width:100%;
+text-align:center;
+border-top:1px solid #333;
+padding-top:20px;
+
+}
+
+
+
+
+
+
+/* WHATSAPP */
+
+
+.whatsapp{
+
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25d366;
+color:white;
+padding:15px 25px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+z-index:999;
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+margin-top:20px;
+
+}
+
+
+nav a{
+
+margin:8px;
+display:inline-block;
+
+}
+
+
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+
+.hero-content h2{
+
+font-size:25px;
+
+}
+
+
+
+.brand h1{
+
+font-size:35px;
+
+}
+
+
+.tester-box img{
+
+width:280px;
+
+}
+
+
+}
